@@ -1,0 +1,32 @@
+name: my_app
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you want to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^0.8.7+4 # For image picking functionality
+  cupertino_icons: ^1.0.8 # Cupertino Icons for iOS-style icons
+  permission_handler: ^11.4.0 # For handling permissions
+  mobile_scanner: ^3.0.0 # For QR code scanning (replaces qr_code_scanner)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0 # For linting and code analysis
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/banner.jpg
+    - assets/images/logo.png
+  fonts:
+    - family: Roboto
+      fonts:
+        - asset: fonts/Roboto-Regular.ttf
